@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>roupas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/roupa.css">
+</head>
+<body>
+    <header>
+        <img src="assets/img/log.webp" alt="Logo"  style="width: 50px; height: 50px;">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#roupas">roupas</a></li>
+                <li><a href="#principal">especial</a></li>
+                <li><a href="#contato">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="highlight-wrapper">
+            <div class="highlight-image-container">
+                <img src="assets/img/loja.webp" alt="Loja de Roupas" />
+            </div>
+            <div class="highlight-content">
+                <h1>Bem-vindo à Loja de Roupas</h1>
+                <p>
+                    Explore uma seleção exclusiva de roupas para todos os estilos e ocasiões. 
+                    Nossa loja oferece peças de alta qualidade, design moderno e conforto para o seu dia a dia.
+                </p>
+                <p>
+                    Trabalhamos com marcas renomadas e garantimos preços acessíveis. 
+                    Atualize seu guarda-roupa com as últimas tendências da moda!
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+    
+    <!-- https://www.alainclass.com/cars/ -->
+    <section class="container" id="principal">
+        <div class="list">
+            <div class="item active itemAnime">
+                <div class="car-img">
+                    <img src="assets/img/jaqueta.png" alt="Jaqueta preta" style="width: auto; height: 350px;">
+                </div>
+                <div class="content">
+                    <p class="car-information">Lançamento</p>
+                    <h2>Jaqueta Preta</h2>
+                    <p class="description">Jaqueta estilosa na cor preta, perfeita para qualquer ocasião. Conforto e elegância para os dias mais frios.</p>
+                    <button class="button1" onclick="window.location.href='#contato';">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/vest.png" alt="Vestido vermelho" style="width: 300px; height: auto;">
+                </div>
+                <div class="content">
+                    <p class="car-information">Edição Limitada</p>
+                    <h2>Vestido Vermelho</h2>
+                    <p class="description">Vestido vermelho elegante, ideal para ocasiões especiais. Design sofisticado e perfeito para quem quer se destacar.</p>
+                    <button class="button1" onclick="window.location.href='#contato';">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/verao.png" alt="Roupa de verão casual" style="width: 325px; height: auto;">
+                </div>
+                <div class="content">
+                    <p class="car-information">Edição Limitada</p>
+                    <h2>Roupa de Verão Casual</h2>
+                    <p class="description">Roupas casuais e confortáveis para o verão, ideais para quem busca praticidade e estilo no dia a dia.</p>
+                    <button class="button1" onclick="window.location.href='#contato';">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev" class="button">←</button>
+            <button id="next" class="button">→</button>
+        </div>
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="roupas">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assets/img/roupa.png" alt="Camisa Polo Vermelha" onclick="expandImage(this)">
+                <p class="description-2">Camisa polo vermelha, um clássico confortável para um look casual e estiloso.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/roupa2.png" alt="Camisa de Botão Preta e Branca" onclick="expandImage(this)">
+                <p class="description-2">Camisa de botão preta e branca, perfeita para um look elegante e sofisticado em qualquer ocasião.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/roupa3.png" alt="Jaqueta Verde com Botão" onclick="expandImage(this)"style="width: 325px; height: auto;>
+                <p class="description-2">Jaqueta verde com botão, ideal para os dias mais frios, mantendo o estilo e o conforto.</p>
+            </div>
+        </div>   
+    </section>
+    
+    
+    
+    
+    <section id="contato" style="  background: linear-gradient(135deg, #ff4e4e, #53ffe2); ">
+        <div class="main-content intro-content">
+          <div class="intro-text-content">
+            <h1>fale Conosco</h1>
+            
+          </div>
+          <div class="intro-img">
+           
+          </div>
+          <div class="contact-form">
+            <form id="form">
+            <fieldset class="form-grid">
+             
+    
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="name" id="first-name" placeholder="Your first name">
+              </div>
+    
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+              </div>
+    
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="Your e-mail">
+              </div>
+    
+              <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="10" placeholder="Your message"></textarea>
+              </div>
+    
+              <div class="form-group full-width">
+                <button type="submit">Send message</button>
+              </div>
+            </fieldset>
+        </form>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function () {
+                    emailjs.init("4KykGEPFUfa-RjW1N");
+                })();
+            </script>
+            <script>
+                document.getElementById('form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_wtzrurc', 'template_tdg7k5s', this)
+                        .then(function () {
+                            alert('Email enviado com sucesso!');
+                        }, function (error) {
+                            alert('Erro ao enviar o email: ' + JSON.stringify(error));
+                        });
+                });
+            </script>
+        </div>
+      </section>
+    <script src="assets/js/script.js"></script>
+
+    <footer id="custom-footer">
+        <div class="social-links-container">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="assets/img/insta1.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="assets/img/facebook1.avif" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="assets/img/tik tok1.webp" alt="TikTok" class="social-icon">
+            </a>
+        </div>
+        <p class="footer-info">© 2024 ever store melhor loja de roupas do brasil</p>
+    </footer>
+    
+</body>
+
+</html>
